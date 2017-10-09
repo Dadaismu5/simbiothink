@@ -52,7 +52,7 @@ use Illuminate\Support\Facades\Validator;
         'album_id'=> $request->get('album_id')
       ));
 
-      return redirect()->route('admin',['id'=>$request->get('album_id')]);
+      return redirect()->route('admin.dashboard',['id'=>$request->get('album_id')]);
     }
 
   public function getDelete($id)

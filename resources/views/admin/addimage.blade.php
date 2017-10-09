@@ -29,7 +29,7 @@
               <div class="content-box">
                 <form name="addimagetoalbum" method="POST" action="{{URL::route('add_image_to_album')}}" enctype="multipart/form-data">
                   {{ csrf_field() }}
-                <input type="hidden" name="album_id"value="{{$album->id}}" />
+                <input type="hidden" name="album_id" value="{{$album->id}}" />
                 <fieldset>
                   <legend>Añade una imagen a {{$album->name}}</legend><br>
                   <div class="form-group">

@@ -18,7 +18,7 @@
             </ul>
           </div>
         @endif
-        <form name="editalbum" action="{{ action('AlbumController@postEdit', $album->id) }}" method="POST" enctype="multipart/form-data">
+          <form name="editalbum" action="/editalbum/{{ $album->id }}" method="POST" enctype="multipart/form-data">
             {{ csrf_field() }}
           <fieldset>
             <h2>Editar <strong>{{$album->name}}</strong></h2>
@@ -29,8 +29,8 @@
             </div>
             <div class="form-group">
               <label for="description">Descripción del proyecto</label>
-              <textarea name="description" rows="10" cols="50" type="text" class="form-control" value="{{ $album->description }}" required></textarea>
-            </div>
+                <textarea name="description" rows="10" cols="50" type="text" class="form-control" required>{{ $album->description }}</textarea>
+              </div>
             <div class="form-group">
               <label for="location">Locación:</label>
               <input name="location" type="text" class="form-control" value="{{ $album->location }}" required>

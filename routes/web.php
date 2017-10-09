@@ -39,7 +39,7 @@ Route::get('/createalbum', array('as' => 'create_album_form','uses' => 'AlbumCon
 Route::post('/createalbum', array('as' => 'create_album','uses' => 'AlbumController@postCreate'));
 
 Route::get('/editalbum/{id}', array('as' => 'edit_album_form','uses' => 'AlbumController@formEdit'));
-Route::post('/edit_album', array('as' => 'edit_album','uses' => 'AlbumController@postEdit'));
+Route::post('/editalbum/{id}', 'AlbumController@postEdit');
 
 Route::get('/deletealbum/{id}', array('as' => 'delete_album','uses' => 'AlbumController@getDelete'));
 Route::get('/album/{id}', array('as' => 'show_album','uses' => 'AlbumController@getAlbum'));
