@@ -1,0 +1,1 @@
+[01-Oct-2017 01:06:07 UTC] PHP Fatal error:  Class 'RenatoMarinho\LaravelPageSpeed\ServiceProvider' not found in /home/simbiothink/simbiothink/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php on line 208

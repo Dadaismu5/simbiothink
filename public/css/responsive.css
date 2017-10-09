@@ -1,0 +1,279 @@
+@media(min-width: 320px) {
+	.simbiomenu {
+		width: 300px;
+	}
+	#menu img {
+    height: 50px;
+    padding: 0px
+	}
+	.navbar-inverse .navbar-toggler {
+	    border-color: transparent;
+	}
+	#vista-proyecto .informacion {
+		width: 50%;
+		bottom: 40%;
+	}
+	#pag-contacto h1 {
+	    transform: translate(0px, 100px) !important;
+	    font-size: 2rem;
+	    letter-spacing: 10px;
+	}
+	.grid figure {
+		width: 100%;
+		height: 300px;
+	}
+	figure.effect-moses h2{
+		font-size: 1rem;
+	}
+	figure.effect-moses h2,
+	figure.effect-moses p {
+		width: 60%;
+	}
+}
+
+@media(min-width: 320px) and (max-width: 576px) {
+	#footer .centrado-moviles {
+		text-align: center;
+		margin: 30px 0;
+	}
+	#vista-proyecto .informacion {
+	    width: 80%;
+	    top: 30%;
+	    height: 400px;
+	}
+	#vista-proyecto .informacion .izq {
+		font-size: 0.8rem;
+	}
+	#vista-proyecto .informacion .der {
+		font-size: 0.8rem;
+	}
+	.btn-project{
+		margin-top: 20% !important;
+		margin-left: 5%;
+	}
+	.wrapper-logo {
+		display: none;
+	}
+	.texto-header h1 {
+		font-size: 2em;
+	}
+	#pag-nosotros #header .texto-header {
+		right: 40%;
+		top: 60%;
+	}
+	.texto-header p {
+		font-weight: bold;
+		font-size: 1em;
+	}
+	#pag-nosotros .texto-nosotros h2 {
+		font-size: 1.2em;
+	}
+	#pag-nosotros .logo {
+		display: none;
+	}
+	#pag-nosotros .line-center {
+		margin-bottom: 20%;
+	}
+	.responsive-p{
+		margin-top: -60%;
+	}
+	#pag-nosotros .texto-nosotros p {
+		font-size: 1rem;
+	}
+	#pag-nosotros .texto-nosotros li {
+		font-size: 1rem;
+	}
+}
+
+
+
+@media(min-width: 320px) and (max-width: 767px) {
+	#footer .col-xs-6 {
+		margin-bottom: 40px;
+		text-align: center !important;
+	}
+
+	#footer img {
+		display: none;
+	}
+	#wrapper-md {
+		display: none;
+	}
+
+	#wrapper-movil {
+		display: inherit;
+	}
+}
+
+
+@media (min-width: 320px) and (max-width: 1200px) {
+	.texto-header {
+		width: 80% !important;
+	}
+	.texto-nosotros {
+		padding: 3vh 5vw !important;
+	}
+}
+@media (min-width:375px) {
+	.simbiomenu {
+		width: 350px;
+	}
+	#pag-contacto h1 {
+			font-size: 3rem;
+	}
+}
+
+@media (min-width:414px) {
+	.simbiomenu {
+		width: 380px;
+	}
+}
+
+@media (min-width: 640px) {
+	.simbiomenu {
+		width: 400px;
+	}
+}
+@media (min-width: 768px) {
+	.simbiomenu {
+		width: 450px;
+	}
+	#pag-contacto h1 {
+		margin-top: 0;
+		font-size: 4rem;
+		transform: translate(40px, 100px) !important;
+	}
+}
+
+@media (min-width: 991px) {
+	#nav-index {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	#texto-svg {
+		display: none;
+	}
+	#pag-nosotros .wrapper-logo {
+		margin-top: 30%;
+	}
+	.texto-header {
+		top: 40%;
+		width: 60%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.simbiomenu {
+		width: 500px;
+	}
+	#pag-contacto h1 {
+		margin-top: 0;
+		font-size: 5rem;
+		transform: translate(80px, 100px) !important;
+	}
+	#pag-nosotros .wrapper-logo {
+		margin-top: 30%;
+	}
+	.texto-header {
+		top: 40%;
+		width: 60%;
+	}
+}
+
+@media(min-width: 1200px) {
+	.grid {
+		margin-left: 5% !important;
+	}
+	.grid figure {
+		width: 30%;
+		height: 250px;
+	}
+	#pag-nosotros .wrapper-logo {
+		margin-top: 30%;
+	}
+	.texto-header {
+		top: 40%;
+		width: 60%;
+	}
+}
+
+@media(min-width: 1600px) {
+	.grid {
+		margin-left: 5% !important;
+	}
+	.grid figure {
+		width: 30%;
+		height: 250px;
+	}
+	.texto-header {
+		top: 40%;
+		width: 60%;
+	}
+	.texto-header h1 {
+		font-size: 3em;
+	}
+	.texto-header .info-us {
+		font-weight: bold;
+		font-size: 1em;
+	}
+	#pag-nosotros .wrapper-logo {
+		margin-top: 30%;
+	}
+}
+
+@media(min-width: 1920px) {
+	.grid {
+		margin-left: 5% !important;
+	}
+	.grid figure {
+		width: 30%;
+		height: 400px;
+	}
+	#pag-nosotros #header .texto-header {
+		width: 40%;
+		right: 20%;
+	}
+	#pag-nosotros .wrapper-logo {
+		margin-top: 20%;
+	}
+	.texto-header {
+		top: 50%
+	}
+}
+@media(min-width: 1200px) and (max-width: 1920px){
+	#vista-proyecto .informacion {
+		width: 30%;
+    bottom: 35%;
+	}
+	#pag-contacto h1 {
+		margin-top: 0;
+		font-size: 5rem;
+		transform: translate(80px, 200px) !important;
+	}
+	.simbiomenu {
+    width: 490px;
+	}
+	.btn-project{
+		margin-top: 35% !important;
+		margin-left: 5% !important;
+	}
+	#pag-nosotros .texto-nosotros h2 {
+    font-size: 2.2em;
+	}
+	figure.effect-moses h2{
+		font-size: 0.9rem;
+	}
+	figure.effect-moses h2,
+	figure.effect-moses p {
+		width: 50%;
+	}
+	#pag-nosotros .texto-nosotros p {
+		font-size: 1.2rem;
+	}
+	#pag-nosotros .texto-nosotros li {
+		font-size: 1.2rem;
+	}
+
+}

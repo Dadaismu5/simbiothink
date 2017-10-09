@@ -1,0 +1,500 @@
+@import url(responsive.css);
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@font-face {
+  font-family: "Champagne Limousines";
+  src: url("../fonts/champagne_limousines/ChampagneLimousines.eot");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines.woff") format("woff");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Champagne Limousines";
+  src: url("../fonts/champagne_limousines/ChampagneLimousines-Bold.eot");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines-Bold.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines-Bold.woff") format("woff");
+  src: url("../fonts/champagne_limousines/ChampagneLimousines-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+body {
+  font-family: "Champagne Limousines", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale; }
+
+text {
+  font-size: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-transition: text-decoration 500ms ease;
+  -moz-transition: text-decoration 500ms ease;
+  -ms-transition: text-decoration 500ms ease;
+  -o-transition: text-decoration 500ms ease;
+  transition: text-decoration 500ms ease; }
+
+text:hover {
+  text-decoration: underline; }
+
+::-webkit-input-placeholder {
+  font-family: "Champagne Limousines", sans-serif !important; }
+
+::-moz-placeholder {
+  font-family: "Champagne Limousines", sans-serif !important; }
+
+.contenido {
+  background-color: #1e2021;
+  position: absolute;
+  z-index: 2; }
+
+#menu {
+  background-color: #191919; }
+  #menu .navbar-toggler-icon {
+    height: 3em; }
+  #menu li {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0 12px; }
+  #menu img {
+    height: 70px;
+    padding: 0 15px; }
+  #menu #mobile-menu .nav-link {
+    float: right; }
+
+.navbar-toggler {
+  z-index: 1000; }
+
+#main {
+  height: 100vh !important; }
+
+.svg-menu {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.simbiomenu {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding-left: 50px;
+  padding-right: 50px;
+  bottom: 0; }
+
+.simbiomenu svg path, svg polygon {
+  fill-opacity: 0;
+  stroke: white;
+  stroke-width: 1;
+  stroke-dasharray: 1219;
+  stroke-dashoffset: 1219;
+  animation-name: draw;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear; }
+
+.simbiomenu svg #Shadows__x28_positive_x29_ path, svg #Shadows__x28_positive_x29_ polygon {
+  animation-delay: 2s; }
+
+a {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform; }
+
+@keyframes draw {
+  90% {
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+    fill-opacity: 0; }
+  100% {
+    stroke-width: 0;
+    fill-opacity: 1; } }
+.item-menu text {
+  font-family: "Lato", sans-serif;
+  color: black; }
+
+#inicio {
+  cursor: pointer; }
+
+#inicio:hover {
+  content: "Inicio";
+  color: white;
+  border: solid;
+  border-bottom: 1px;
+  fill: #2F303C;
+  cursor: pointer;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s; }
+
+#bullets {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  #bullets ul {
+    list-style: none; }
+  #bullets li {
+    display: inline-block;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin-right: 3em;
+    background-color: #808080;
+    transition: all 0.5s ease; }
+  #bullets li:hover {
+    cursor: pointer;
+    background-color: #dbdbdb; }
+  #bullets .active {
+    background-color: #dbdbdb; }
+
+#nosotros {
+  cursor: pointer; }
+
+#nosotros:hover {
+  content: "Nosotros";
+  color: white;
+  fill: #2F303C;
+  cursor: pointer;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s; }
+
+#proyectos {
+  cursor: pointer; }
+
+#proyectos:hover {
+  content: "Nosotros";
+  color: white;
+  fill: #2F303C;
+  cursor: pointer;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s; }
+
+#contacto {
+  cursor: pointer; }
+
+#contacto:hover {
+  content: "Nosotros";
+  color: white;
+  fill: #2F303C;
+  cursor: pointer;
+  -o-transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s; }
+
+#projects {
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  margin-top: 8%; }
+
+#pag-proyectos {
+  background-color: #fff;
+  padding-bottom: 18vh; }
+  #pag-proyectos .title {
+    margin: 16vh 0 8vh; }
+
+#vista-proyecto {
+  position: relative;
+  height: 100vh !important; }
+  #vista-proyecto .btn-project {
+    background-color: #000;
+    padding: 10px 10px 10px 10px;
+    color: #fff;
+    font-weight: bold;
+    border-color: #3e3e3e;
+    border-style: solid;
+    border-width: 2px;
+    letter-spacing: 5px; }
+  #vista-proyecto .botones .ctrl-gal {
+    position: absolute;
+    color: #fff; }
+  #vista-proyecto .botones .ctrl-gal:hover {
+    color: #b2b2b2; }
+  #vista-proyecto .botones .salir {
+    top: 4%;
+    right: 2%; }
+  #vista-proyecto .botones .prev {
+    width: 30px;
+    top: 45%;
+    left: 2%; }
+  #vista-proyecto .botones .next {
+    width: 30px;
+    top: 45%;
+    right: 2%; }
+  #vista-proyecto .informacion {
+    position: absolute;
+    left: 5%;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff; }
+    #vista-proyecto .informacion h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 10px; }
+    #vista-proyecto .informacion p {
+      margin-bottom: 0.5rem;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.8rem; }
+    #vista-proyecto .informacion .desc {
+      margin-bottom: 1.5rem; }
+    #vista-proyecto .informacion .btn-proyecto {
+      color: #fff; }
+    #vista-proyecto .informacion .izq {
+      float: left;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 0.3rem; }
+    #vista-proyecto .informacion .der {
+      float: right;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 0.3rem; }
+    #vista-proyecto .informacion .close-info {
+      float: right;
+      background: transparent;
+      border: none; }
+
+#vista-proyecto-movil h1 {
+  margin: 5vh 0; }
+#vista-proyecto-movil .carousel-inner {
+  height: 250px; }
+#vista-proyecto-movil .carousel-item, #vista-proyecto-movil img {
+  width: 100% !important;
+  height: 100% !important; }
+
+#info-proyecto-xs {
+  text-align: center; }
+  #info-proyecto-xs .col-xs-12 {
+    margin-top: 1em;
+    padding: 2em; }
+
+#pag-nosotros .row {
+  margin-bottom: 4vh; }
+#pag-nosotros #header {
+  position: relative;
+  height: 100vh;
+  background-image: url(/img/slide-01.jpg);
+  background-size: cover;
+  background-position: center center; }
+  #pag-nosotros #header .texto-header {
+    position: relative;
+    float: right;
+    z-index: 1;
+    color: #fff; }
+    #pag-nosotros #header .texto-header h1 {
+      letter-spacing: 15px;
+      font-weight: bold;
+      margin-bottom: 1rem; }
+    #pag-nosotros #header .texto-header p {
+      padding: 12px 0; }
+#pag-nosotros .info-us {
+  font-family: "Raleway", sans-serif; }
+#pag-nosotros .line {
+  margin: 1px;
+  width: 10%;
+  border-style: solid;
+  color: #fff;
+  margin-bottom: 5%;
+  margin-top: 3%; }
+#pag-nosotros .texto-nosotros {
+  padding: 8vh 5vw; }
+  #pag-nosotros .texto-nosotros h2 {
+    line-height: 1.3em;
+    font-weight: bold;
+    letter-spacing: 15px; }
+  #pag-nosotros .texto-nosotros p {
+    width: 100%; }
+  #pag-nosotros .texto-nosotros li {
+    margin-bottom: 0.2rem; }
+#pag-nosotros .img-nosotros {
+  width: 100%;
+  margin-top: 10%; }
+#pag-nosotros .logo {
+  position: absolute;
+  width: 25%;
+  top: -5%;
+  right: 10%;
+  z-index: 0; }
+#pag-nosotros .team {
+  padding-top: 5%;
+  text-align: center; }
+#pag-nosotros .team-title {
+  font-weight: bold;
+  letter-spacing: 10px;
+  margin-bottom: 2%; }
+#pag-nosotros .nombres {
+  margin-bottom: 4em;
+  text-align: center;
+  font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 12px; }
+#pag-nosotros .line-center {
+  width: 5%;
+  border-style: solid;
+  border-width: 2px;
+  color: #fff;
+  margin: 0 auto; }
+#pag-nosotros .mbottom {
+  margin-bottom: 5%; }
+  #pag-nosotros .mbottom p {
+    letter-spacing: 2px;
+    padding: 0; }
+  #pag-nosotros .mbottom span {
+    border-bottom: 1px solid white;
+    letter-spacing: 7px;
+    padding: 30px 0; }
+
+#footer {
+  background-color: #cccccc;
+  padding: 40px 30px;
+  padding-bottom: 30px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2; }
+  #footer .logo {
+    left: 10%; }
+  #footer img {
+    width: 30%; }
+  #footer p {
+    margin-bottom: 0.1rem !important;
+    font-size: 1rem; }
+  #footer .link, #footer .titulo {
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 6px;
+    padding: 7px;
+    border: 2px solid #cccccc;
+    transition: border 0.2s; }
+  #footer .link:hover, #footer .titulo:hover {
+    border: 2px solid #1e2021;
+    transition: 1s;
+    -o-transition: 1s;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s; }
+  #footer .contacto {
+    width: auto;
+    color: #1e2021; }
+  #footer .contacto:hover {
+    cursor: pointer;
+    color: #1e2021;
+    background-color: #cccccc; }
+  #footer .titulo {
+    cursor: initial;
+    border: none;
+    padding-top: 0;
+    padding-left: 0; }
+  #footer .titulo:hover {
+    border: none; }
+  #footer .m-bottom {
+    margin-bottom: 0.6rem; }
+  #footer .datos-contacto {
+    color: #1e2021;
+    font-size: 1em;
+    font-family: "Raleway"; }
+  #footer .ver-align {
+    padding-top: 1rem; }
+  #footer .social {
+    color: #1e2021;
+    margin-right: 20px; }
+
+#pag-contacto {
+  padding-top: 10vh;
+  width: 100vw;
+  overflow-y: auto;
+  background-color: #1e2021;
+  position: absolute;
+  z-index: 2; }
+  #pag-contacto .contact-bg {
+    background-image: url("/img/header-simbio.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 90vh; }
+  #pag-contacto h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: #fff;
+    left: 7%;
+    font-weight: bold;
+    letter-spacing: 20px;
+    position: absolute;
+    transform: translate(80px, 1200px); }
+  #pag-contacto .line {
+    color: #1e1e1e;
+    width: 30%;
+    border: solid;
+    border-width: 1px;
+    transform: translate(80px, 2000px); }
+  #pag-contacto .outline-back {
+    width: 40%;
+    margin-top: 0%;
+    opacity: 0.3;
+    position: absolute; }
+  #pag-contacto .info {
+    position: absolute; }
+  #pag-contacto .data-contact {
+    margin-top: 30vh;
+    font-size: 1.3rem;
+    display: inline-block; }
+  #pag-contacto .white-icons {
+    color: #fff;
+    display: inline-block !important; }
+  #pag-contacto h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 20px;
+    position: absolute;
+    margin-top: 20vh;
+    width: 100vw; }
+  #pag-contacto #forma-contacto {
+    margin-bottom: 10rem;
+    margin-top: 10rem; }
+    #pag-contacto #forma-contacto .campo {
+      border: none;
+      border-radius: 0;
+      border-bottom: 3px solid #191919;
+      margin: 6px 0;
+      opacity: 0.75; }
+    #pag-contacto #forma-contacto button {
+      font-family: "Champagne Limousines", sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      font-size: 1em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      border: 2px solid #191919;
+      background-color: #191919;
+      color: white;
+      margin-top: 1em;
+      padding: 1em 3.5em; }
+    #pag-contacto #forma-contacto button:hover {
+      cursor: pointer;
+      background-color: white;
+      color: #191919;
+      transition: 0.5s; }
+
+/*# sourceMappingURL=styles.css.map */

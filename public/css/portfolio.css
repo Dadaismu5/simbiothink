@@ -1,0 +1,51 @@
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+
+.grid-item {
+  float: left;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	margin-bottom: 1em;
+	cursor: pointer;
+}
+
+.grid-item:after {
+	position: absolute;
+	content: "";
+	top: 0; bottom: 0;
+	left: 0.5em; right: 0.5em;
+	background: rgba(0,0,0,0.4);
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+}
+
+.grid-item:hover:after {
+	opacity: 1;
+}
+
+.grid-item .caption {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	opacity: 0;
+	transition: opacity 0.4s ease-in-out;
+	z-index: 1;
+  	font-size: .5em
+}
+
+.grid-item .caption h4 {
+  font-size: 2em;
+}
+
+.grid-item:hover .caption {
+	opacity: 1;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}

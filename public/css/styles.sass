@@ -1,0 +1,488 @@
+@import fonts.sass
+@import responsive.css
+@import url('https://fonts.googleapis.com/css?family=Lato')
+
+$lato: 'Lato', sans-serif
+
+body
+	font-family: $champagne
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	-moz-osx-font-smoothing: grayscale
+
+text
+	font-size: 1em
+	font-weight: 800
+	text-transform: uppercase
+	letter-spacing: .1em
+	-webkit-transition: text-decoration 500ms ease
+	-moz-transition: text-decoration 500ms ease
+	-ms-transition: text-decoration 500ms ease
+	-o-transition: text-decoration 500ms ease
+	transition: text-decoration 500ms ease
+text:hover
+	text-decoration: underline
+
+::-webkit-input-placeholder
+	font-family: $champagne !important
+
+::-moz-placeholder
+	font-family: $champagne !important
+
+.contenido
+	background-color: #1e2021
+	position: absolute
+	z-index: 2
+
+#menu
+	background-color: #191919
+	.navbar-toggler-icon
+		height: 3em
+	li
+		font-size: .9rem
+		font-weight: bold
+		text-transform: uppercase
+		letter-spacing: 3px
+		margin: 0 12px
+	img
+		height: 70px
+		padding: 0 15px
+	#mobile-menu
+		.nav-link
+			float: right
+.navbar-toggler
+	z-index: 1000
+#main
+	height: 100vh !important
+
+.svg-menu
+	position: absolute
+	left: 50%
+	top: 50%
+	-webkit-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+.simbiomenu
+	margin-left: auto
+	margin-right: auto
+	display: block
+	padding-left: 50px
+	padding-right: 50px
+	bottom: 0
+.simbiomenu svg path, svg polygon
+	fill-opacity: 0
+	stroke: white
+	stroke-width: 1
+	stroke-dasharray: 1219
+	stroke-dashoffset: 1219
+	animation-name: draw
+	animation-duration: 3s
+	animation-iteration-count: 1
+	animation-fill-mode: forwards
+	animation-timing-function: linear
+.simbiomenu svg #Shadows__x28_positive_x29_ path, svg #Shadows__x28_positive_x29_ polygon
+	animation-delay: 2s
+a
+	display: inline-block
+	vertical-align: middle
+	-webkit-transform: perspective(1px) translateZ(0)
+	transform: perspective(1px) translateZ(0)
+	box-shadow: 0 0 1px transparent
+	-webkit-transition-duration: 0.3s
+	transition-duration: 0.3s
+	-webkit-transition-property: transform
+	transition-property: transform
+
+@keyframes draw
+	90%
+		stroke-dashoffset: 0
+		stroke-width: 2
+		fill-opacity: 0
+	100%
+		stroke-width: 0
+		fill-opacity: 1
+
+.item-menu text
+	font-family: $lato
+	color: black
+
+#inicio
+	cursor: pointer
+
+#inicio:hover
+	content: 'Inicio'
+	color: white
+	border: solid
+	border-bottom: 1px
+	fill: #2F303C
+	cursor: pointer
+	-o-transition: 1s
+	-ms-transition: 1s
+	-moz-transition: 1s
+	-webkit-transition: 1s
+
+#bullets
+	//visibility: hidden
+	position: absolute
+	bottom: 5%
+	left: 50%
+	-webkit-transform: translate(-50%, -50%)
+	transform: translate(-50%, -50%)
+	ul
+		list-style: none
+	li
+		display: inline-block
+		border-radius: 50%
+		width: 12px
+		height: 12px
+		margin-right: 3em
+		background-color: #808080
+		transition: all 0.5s ease
+	li:hover
+		cursor: pointer
+		background-color: #dbdbdb
+	.active
+		background-color: #dbdbdb
+
+#nosotros
+	cursor: pointer
+#nosotros:hover
+	content: 'Nosotros'
+	color: white
+	fill: #2F303C
+	cursor: pointer
+	-o-transition: 1s
+	-ms-transition: 1s
+	-moz-transition: 1s
+	-webkit-transition: 1s
+
+#proyectos
+	cursor: pointer
+#proyectos:hover
+	content: 'Nosotros'
+	color: white
+	fill: #2F303C
+	cursor: pointer
+	-o-transition: 1s
+	-ms-transition: 1s
+	-moz-transition: 1s
+	-webkit-transition: 1s
+
+#contacto
+	cursor: pointer
+#contacto:hover
+	content: 'Nosotros'
+	color: white
+	fill: #2F303C
+	cursor: pointer
+	-o-transition: 1s
+	-ms-transition: 1s
+	-moz-transition: 1s
+	-webkit-transition: 1s
+#projects
+	position: absolute
+	z-index: 2
+	width: 100vw
+	margin-top: 8%
+
+#pag-proyectos
+	background-color: #fff
+	padding-bottom: 18vh
+	.title
+		margin: 16vh 0 8vh
+
+#vista-proyecto
+	position: relative
+	height: 100vh !important
+	.btn-project
+		background-color: #000
+		padding: 10px 10px 10px 10px
+		color: #fff
+		font-weight: bold
+		border-color: #3e3e3e
+		border-style: solid
+		border-width: 2px
+		letter-spacing: 5px
+
+	.botones
+		.ctrl-gal
+			position: absolute
+			color: #fff
+		.ctrl-gal:hover
+			color: #b2b2b2
+		.salir
+			top: 4%
+			right: 2%
+		.prev
+			width: 30px
+			top: 45%
+			left: 2%
+		.next
+			width: 30px
+			top: 45%
+			right: 2%
+	.informacion
+		position: absolute
+		left: 5%
+		padding: 2em
+		background-color: rgba(0, 0, 0, 0.8)
+		color: #fff
+		//filter: blur(0.9px)
+		h1
+			font-size: 1.5em
+			font-weight: bold
+			text-transform: uppercase
+			letter-spacing: 10px
+		p
+			margin-bottom: 0.5rem
+			font-family: 'Raleway', sans-serif
+			font-size: 0.8rem
+		.desc
+			margin-bottom: 1.5rem
+		.btn-proyecto
+			color: #fff
+		.izq
+			float: left
+			text-transform: uppercase
+			letter-spacing: 2px
+			font-weight: 0.3rem
+		.der
+			float: right
+			text-transform: uppercase
+			letter-spacing: 2px
+			font-weight: 0.3rem
+		.close-info
+			float: right
+			background: transparent
+			border: none
+
+#vista-proyecto-movil
+	h1
+		margin: 5vh 0
+	.carousel-inner
+		height: 250px
+	.carousel-item, img
+		width: 100% !important
+		height: 100% !important
+
+#info-proyecto-xs
+	text-align: center
+	.col-xs-12
+		margin-top: 1em
+		padding: 2em
+
+#pag-nosotros
+	.row
+		margin-bottom: 4vh
+	#header
+		position: relative
+		height: 100vh
+		background-image: url(/img/slide-01.jpg)
+		background-size: cover
+		background-position: center center
+		.texto-header
+			position: relative
+			float: right
+			z-index: 1
+			color: #fff
+			h1
+				letter-spacing: 15px
+				font-weight: bold
+				margin-bottom: 1rem
+			p
+				padding: 12px 0
+	.info-us
+		font-family: 'Raleway', sans-serif
+	.line
+		margin: 1px
+		width: 10%
+		border-style: solid
+		color: #fff
+		margin-bottom: 5%
+		margin-top: 3%
+	.texto-nosotros
+		padding: 8vh 5vw
+		h2
+			line-height: 1.3em
+			font-weight: bold
+			letter-spacing: 15px
+		p
+			width: 100%
+		li
+			margin-bottom: 0.2rem
+	.img-nosotros
+		width: 100%
+		margin-top: 10%
+	.logo
+		position: absolute
+		width: 25%
+		top: -5%
+		right: 10%
+		z-index: 0
+	.team
+		padding-top: 5%
+		text-align: center
+	.team-title
+		font-weight: bold
+		letter-spacing: 10px
+		margin-bottom: 2%
+	.nombres
+		margin-bottom: 4em
+		text-align: center
+		font-size: 1em
+		font-family: 'Raleway', sans-serif
+		letter-spacing: 12px
+	.line-center
+		width: 5%
+		border-style: solid
+		border-width: 2px
+		color: #fff
+		margin: 0 auto
+	.mbottom
+		margin-bottom: 5%
+		p
+			letter-spacing: 2px
+			padding: 0
+		span
+			border-bottom: 1px solid white
+			letter-spacing: 7px
+			padding: 30px 0
+
+#footer
+	background-color: #cccccc
+	padding: 40px 30px
+	padding-bottom: 30px
+	position: fixed
+	bottom: 0
+	left: 0
+	width: 100%
+	z-index: -2
+	.logo
+		left: 10%
+	img
+		width: 30%
+	p
+		margin-bottom: 0.1rem !important
+		font-size: 1rem
+	.link
+		font-size: 1em
+		font-weight: bold
+		text-decoration: none
+		color: black
+		letter-spacing: 6px
+		padding: 7px
+		border: 2px solid #cccccc
+		transition: border 0.2s
+	.link:hover
+		border: 2px solid #1e2021
+		transition: 1s
+		-o-transition: 1s
+		-ms-transition: 1s
+		-moz-transition: 1s
+		-webkit-transition: 1s
+	.contacto
+		width: auto
+		color: #1e2021
+	.contacto:hover
+		cursor: pointer
+		color: #1e2021
+		background-color: #cccccc
+	.titulo
+		@extend .link
+		cursor: initial
+		border: none
+		padding-top: 0
+		padding-left: 0
+	.titulo:hover
+		border: none
+	.m-bottom
+		margin-bottom: 0.6rem
+	.datos-contacto
+		color: #1e2021
+		font-size: 1em
+		font-family: 'Raleway'
+	.ver-align
+		padding-top: 1rem
+	.social
+		color: #1e2021
+		margin-right: 20px
+
+.f-project
+	//display: none
+
+#pag-contacto
+	padding-top: 10vh
+	width: 100vw
+	overflow-y: auto
+	background-color: #1e2021
+	position: absolute
+	z-index: 2
+	.contact-bg
+		background-image: url('/img/header-simbio.jpg')
+		background-size: cover
+		width: 100%
+		height: 90vh
+	h1
+		font-size: 5rem
+		text-transform: uppercase
+		color: #fff
+		left: 7%
+		font-weight: bold
+		letter-spacing: 20px
+		position: absolute
+		transform: translate(80px, 1200px)
+	.line
+		color: #1e1e1e
+		width: 30%
+		border: solid
+		border-width: 1px
+		transform: translate(80px, 2000px)
+	.outline-back
+		width: 40%
+		margin-top: -0%
+		opacity: 0.3
+		position: absolute
+	.info
+		position: absolute
+	.data-contact
+		margin-top: 30vh
+		font-size: 1.3rem
+		display: inline-block
+	.white-icons
+		color: #fff
+		display: inline-block !important
+
+	h2
+		font-size: 3.5rem
+		text-transform: uppercase
+		color: #fff
+		font-weight: bold
+		letter-spacing: 20px
+		position: absolute
+		margin-top: 20vh
+		width: 100vw
+	#forma-contacto
+		margin-bottom: 10rem
+		margin-top: 10rem
+		.campo
+			border: none
+			border-radius: 0
+			border-bottom: 3px solid #191919
+			margin: 6px 0
+			opacity: 0.75
+		button
+			font-family: $champagne
+			text-transform: uppercase
+			letter-spacing: 10px
+			font-size: 1em
+			font-weight: bold
+			letter-spacing: 2px
+			border: 2px solid #191919
+			background-color: #191919
+			color: white
+			margin-top: 1em
+			padding: 1em 3.5em
+		button:hover
+			cursor: pointer
+			background-color: white
+			color: #191919
+			transition: 0.5s
