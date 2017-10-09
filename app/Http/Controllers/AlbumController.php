@@ -72,7 +72,7 @@ class AlbumController extends Controller
 {
   $album = Album::find($id);
   //$album = Album::all();
-      if(count($album) > 0){
+      if( isset($album->id)) {
           $album->name = Input::get('name');
           $album->description = Input::get('description');
           $album->year = Input::get('year');
