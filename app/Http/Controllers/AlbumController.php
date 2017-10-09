@@ -71,15 +71,17 @@ class AlbumController extends Controller
   public function postEdit(Request $request, $id)
 {
   $album = Album::find($id);
-  $album = Album::all();
+  //$album = Album::all();
       if(count($album) > 0){
           $album->name = Input::get('name');
           $album->description = Input::get('description');
           $album->year = Input::get('year');
           $album->location = Input::get('location');
           $album->save();
-          Alert::success('Se ha actualizado correctamente.');
-          return view('admin.dashboard');
+          //Alert::success('Se ha actualizado correctamente.');
+          $albums = Album::all();
+          return view('admin.dashboard')->with('albums',$albums);
+          //return view('admin.dashboard');
       } else {
           Alert::error('No se pudo actualizar la galería.', 'Error');
           return view('galeries');
